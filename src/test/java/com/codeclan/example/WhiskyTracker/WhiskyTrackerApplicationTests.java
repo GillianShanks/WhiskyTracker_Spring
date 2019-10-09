@@ -69,6 +69,11 @@ public class WhiskyTrackerApplicationTests {
 	public void getWhiskiesByDistilleryRegionREST(){
 		List<Whisky> found =  whiskyRepository.getWhiskyByDistilleryRegion("Highland");
 		assertEquals(2, found.size());
+	}
 
+	@Test
+	public void getDistilleriesByWhiskyAge(){
+		List<Distillery> found = distilleryRepository.getDistilleriesByWhiskyAge(12);
+		assertEquals(2, found.size());
 	}
 }
