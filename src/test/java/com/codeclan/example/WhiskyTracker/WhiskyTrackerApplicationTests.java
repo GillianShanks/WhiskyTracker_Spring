@@ -82,4 +82,11 @@ public class WhiskyTrackerApplicationTests {
 		List<Distillery> found = distilleryRepository.getDistilleriesByWhiskyAge(12);
 		assertEquals(2, found.size());
 	}
+
+//	@Test
+//	public void findDistilleryByWhiskyContainingWhiskyAge(){
+//		List<Distillery> found = distilleryRepository.findDistilleryByWhiskyAgeContaining(12);
+//		assertEquals(2, found.size());
+//	}
+
 }
