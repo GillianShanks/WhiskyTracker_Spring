@@ -13,6 +13,7 @@ import javax.persistence.EntityManager;
 import java.util.List;
 
 public class WhiskyRepositoryImpl implements WhiskyRepositoryCustom {
+
     @Autowired
     EntityManager entityManager;
 
